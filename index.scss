@@ -1,0 +1,332 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+$font-st: 'Times New Roman', Times, serif;
+$color-pry: #1D809F;
+@mixin col{
+    color: #ECB807;
+    font-size: x-small;
+    font-weight: bolder;
+    
+}
+@mixin we{
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+@mixin flex{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+body{
+    overflow-x: hidden;
+
+}
+.head{
+   background-image: url(img/bg-masthead.jpg);
+   background-repeat: no-repeat; 
+   background-position: center;
+   background-size: cover;
+   text-align: center;
+   width: 100%;
+   height: 100vh;
+
+   .wall{
+    padding: 250px;
+     
+}
+
+}
+
+.main-heading{
+    font-family: $font-st;
+font-size: 80px;
+
+}
+
+.sub-name{
+    font-family: $font-st;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@mixin buttons{
+    padding: 20px;
+   background-color: $color-pry;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   margin: 35px;
+   a{
+    color: white;
+   text-decoration: none;
+   font-family: $font-st;
+   font-weight: bold;
+   }
+
+}
+
+
+.banner{
+    width: 100%;
+    height: 300px;
+   text-align: center;
+
+}
+.button{
+   @include buttons;
+ 
+  
+  
+}
+.ban{
+    padding: 100px;
+}
+
+.sytl{
+    font-family: $font-st;
+    font-size: larger;
+    font-weight: bold;
+}
+.sub-bn{
+    font-family: $font-st;
+    font-size: smaller;
+    font-weight: lighter;
+    
+}
+
+.button1{
+    @include buttons;
+    background-color: black;
+    
+}
+.services{
+
+    width: 100%;
+    height: 300px;
+    background-color: $color-pry;
+    text-align: center;
+    padding-top: 60px;
+
+ 
+
+    .ser{
+       @include col;
+    }
+
+
+    h2{
+        @include we;
+        
+    }  
+    
+  
+.icon{
+    @include flex;
+color: white;
+
+.wor{
+    padding: 15px;
+}
+
+
+
+
+.circle{
+    @include buttons;
+    border-radius: 50%;
+   background-color: white;
+   width: 70px;
+   height: 70px;
+   @include flex;
+   margin-left: 30PX;
+   
+  
+  
+}  
+.let{
+    font-family: $font-st;
+ font-size: x-small;
+    font-weight:lighter;
+    
+}
+}
+img{
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    
+}
+  
+}
+
+.welc{
+    background-image: url(img/portfolio-4.jpg);
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+    .well{
+        text-align: center;
+        padding-top: 200px;
+        font-weight: bolder;
+         font-size: xx-large;
+        }
+        
+        .down{
+            @include buttons;
+            
+            
+            
+        }
+}
+
+.recents{
+    width: 100%;
+    height: 700px; 
+   
+
+
+    .its{
+        text-align: center;
+        @include we;
+        color: black;
+
+    }
+   
+}
+
+
+.container{
+   padding-top: 50px;
+   @include flex;
+   color: white;
+   
+
+   .flex-item{
+    background-image: url(img/portfolio-1.jpg);
+    background-size: cover;
+    width: 30vw;
+    height: 40vh;
+   
+    
+   } 
+   
+   .flex-item2{
+       background-image: url(img/portfolio-2.jpg);
+       background-size: cover;
+       width: 30vw;
+       height: 40vh;
+   }
+   
+}
+
+h4{
+   margin-left: 40px;
+   padding-top: 140px;
+   font-family: $font-st;
+   font-size: smaller;
+   font-weight: bolder;
+   
+}
+.wrd{
+   margin-left: 40px;
+   margin-right: 40px;
+   font-family: $font-st;
+   font-weight: lighter;
+   font-size: smaller;
+    
+}
+.container2{
+    @include flex;
+    color: white;
+    
+    .flex-item3{
+        background-image: url(img/portfolio-3.jpg);
+        background-size: contain;
+        width: 30vw;
+        height: 40vh;
+    }
+    .flex-item4{
+        background-image: url(img/portfolio-4.jpg);
+        background-size: cover;
+        width: 30vw;
+        height: 40vh;
+    }
+}
+.cents{
+    text-align: center;
+   padding-top: 50px;
+   @include col;
+   
+}
+
+.below{
+    width: 100%;
+    height: 250px;
+    background-color: $color-pry;
+    text-align: center;
+
+    .resist
+{
+    text-align: center;
+    @include we;
+    font-size: x-large;
+    padding-top: 60px;
+   
+}
+
+.click{
+    @include buttons;
+    background-color: white;
+    a{
+        color: black;
+    }
+}
+
+.look{
+    @include buttons;
+    background-color: black;
+}
+}
+   .map{
+    height: 60vh;
+    width: 100%;
+   }
+   .pink{
+        height: 60vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+.footer{
+   height: 10vh;
+   text-align: center;
+   padding: 20px;
+   
+.cat{
+    object-fit: contain;
+    margin: 10px;
+    width: 50px;
+}
+.copy{
+    font-family: $font-st;
+    font-size: x-small;
+    font-weight: lighter;
+    padding: 30px;
+}
+}
