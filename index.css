@@ -14,63 +14,57 @@ body {
   background-size: cover;
   text-align: center;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
 }
 .head .wall {
-  padding: 250px;
+  padding: 10rem;
+  max-width: 100%;
 }
-
-.main-heading {
+.head .main-heading {
   font-family: "Times New Roman", Times, serif;
-  font-size: 80px;
+  font-size: 5rem;
 }
-
-.sub-name {
+.head .sub-name {
   font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
   font-weight: bold;
+  font-size: 1.5rem;
   font-style: italic;
 }
-
-.banner {
-  width: 100%;
-  height: 300px;
-  text-align: center;
-}
-
-.button {
-  padding: 20px;
+.head .button {
+  padding: 1em;
   background-color: #1D809F;
   color: white;
   border: none;
   border-radius: 5px;
   margin: 35px;
 }
-.button a {
+.head .button a {
   color: white;
   text-decoration: none;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
 }
 
-.ban {
-  padding: 100px;
+.banner {
+  width: 100%;
+  height: 50vh;
+  text-align: center;
 }
-
-.sytl {
+.banner .ban {
+  padding: 15vh;
+}
+.banner .sytl {
   font-family: "Times New Roman", Times, serif;
-  font-size: larger;
+  font-size: 1.5rem;
   font-weight: bold;
 }
-
-.sub-bn {
+.banner .sub-bn {
   font-family: "Times New Roman", Times, serif;
-  font-size: smaller;
+  font-size: 0.8rem;
   font-weight: lighter;
 }
-
-.button1 {
-  padding: 20px;
+.banner .button1 {
+  padding: 1em;
   background-color: #1D809F;
   color: white;
   border: none;
@@ -78,7 +72,7 @@ body {
   margin: 35px;
   background-color: black;
 }
-.button1 a {
+.banner .button1 a {
   color: white;
   text-decoration: none;
   font-family: "Times New Roman", Times, serif;
@@ -87,19 +81,19 @@ body {
 
 .services {
   width: 100%;
-  height: 300px;
+  height: 60vh;
   background-color: #1D809F;
   text-align: center;
   padding-top: 60px;
 }
 .services .ser {
   color: #ECB807;
-  font-size: x-small;
+  font-size: 0.6rem;
   font-weight: bolder;
 }
 .services h2 {
   color: white;
-  font-size: xx-large;
+  font-size: 3rem;
   font-weight: bold;
 }
 .services .icon {
@@ -108,11 +102,11 @@ body {
   justify-content: center;
   color: white;
 }
-.services .icon .wor {
+.services .wor {
   padding: 15px;
 }
-.services .icon .circle {
-  padding: 20px;
+.services .circle {
+  padding: 1em;
   background-color: #1D809F;
   color: white;
   border: none;
@@ -120,27 +114,27 @@ body {
   margin: 35px;
   border-radius: 50%;
   background-color: white;
-  width: 70px;
-  height: 70px;
+  width: 6em;
+  height: 6em;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 30PX;
 }
-.services .icon .circle a {
+.services .circle a {
   color: white;
   text-decoration: none;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
 }
-.services .icon .let {
+.services .let {
   font-family: "Times New Roman", Times, serif;
-  font-size: x-small;
+  font-size: 0.6rem;
   font-weight: lighter;
 }
 .services img {
-  height: 30px;
-  width: 30px;
+  height: 60%;
+  width: 60%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -158,10 +152,10 @@ body {
   text-align: center;
   padding-top: 200px;
   font-weight: bolder;
-  font-size: xx-large;
+  font-size: 3rem;
 }
 .welc .down {
-  padding: 20px;
+  padding: 1em;
   background-color: #1D809F;
   color: white;
   border: none;
@@ -177,95 +171,90 @@ body {
 
 .recents {
   width: 100%;
-  height: 700px;
+  height: 120vh;
 }
 .recents .its {
   text-align: center;
   color: white;
-  font-size: xx-large;
+  font-size: 3rem;
   font-weight: bold;
   color: black;
 }
-
-.container {
+.recents .cents {
+  text-align: center;
+  padding-top: 50px;
+  color: #ECB807;
+  font-size: 0.6rem;
+  font-weight: bolder;
+}
+.recents .container {
   padding-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
 }
-.container .flex-item {
+.recents .container .flex-item {
   background-image: url(img/portfolio-1.jpg);
   background-size: cover;
-  width: 30vw;
+  width: 30%;
   height: 40vh;
 }
-.container .flex-item2 {
+.recents .container .flex-item2 {
   background-image: url(img/portfolio-2.jpg);
   background-size: cover;
-  width: 30vw;
+  width: 30%;
   height: 40vh;
 }
-
-h4 {
+.recents h4 {
   margin-left: 40px;
   padding-top: 140px;
   font-family: "Times New Roman", Times, serif;
   font-size: smaller;
   font-weight: bolder;
 }
-
-.wrd {
+.recents .wrd {
   margin-left: 40px;
   margin-right: 40px;
   font-family: "Times New Roman", Times, serif;
   font-weight: lighter;
-  font-size: smaller;
+  font-size: 0.9rem;
 }
-
-.container2 {
+.recents .container2 {
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
 }
-.container2 .flex-item3 {
+.recents .container2 .flex-item3 {
   background-image: url(img/portfolio-3.jpg);
-  background-size: contain;
-  width: 30vw;
+  background-size: cover;
+  width: 30%;
   height: 40vh;
 }
-.container2 .flex-item4 {
+.recents .container2 .flex-item4 {
   background-image: url(img/portfolio-4.jpg);
   background-size: cover;
-  width: 30vw;
+  width: 30%;
   height: 40vh;
-}
-
-.cents {
-  text-align: center;
-  padding-top: 50px;
-  color: #ECB807;
-  font-size: x-small;
-  font-weight: bolder;
 }
 
 .below {
   width: 100%;
-  height: 250px;
+  height: 40vh;
   background-color: #1D809F;
   text-align: center;
 }
 .below .resist {
   text-align: center;
   color: white;
-  font-size: xx-large;
+  font-size: 3rem;
   font-weight: bold;
-  font-size: x-large;
+  font-size: 2rem;
   padding-top: 60px;
 }
 .below .click {
-  padding: 20px;
+  padding: 1em;
   background-color: #1D809F;
   color: white;
   border: none;
@@ -283,7 +272,7 @@ h4 {
   color: black;
 }
 .below .look {
-  padding: 20px;
+  padding: 1em;
   background-color: #1D809F;
   color: white;
   border: none;
@@ -302,8 +291,7 @@ h4 {
   height: 60vh;
   width: 100%;
 }
-
-.pink {
+.map .pink {
   height: 60vh;
   width: 100%;
   -o-object-fit: cover;
@@ -323,7 +311,84 @@ h4 {
 }
 .footer .copy {
   font-family: "Times New Roman", Times, serif;
-  font-size: x-small;
+  font-size: 0.6rem;
   font-weight: lighter;
   padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .head .wall {
+    padding: 5rem;
+    max-width: 100%;
+  }
+  .head .wall .main-heading {
+    font-size: 3rem;
+  }
+  .sub-name {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 1rem;
+    font-style: italic;
+  }
+}
+.banner .ban {
+  padding: 5vh;
+}
+.banner .ban .sytl {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+}
+.banner .ban .sytl .sub-bn {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.3rem;
+}
+
+.services {
+  padding-top: 30px;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+.let {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.9rem;
+}
+
+.icon {
+  flex-wrap: wrap;
+}
+
+.wor {
+  padding: 5px;
+}
+
+.circle {
+  width: 2em;
+  height: 10em;
+  border: 1px solid #000;
+}
+
+.well {
+  font-size: 2rem;
+}
+
+.wrd {
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+}
+
+.its {
+  font-size: 2rem;
+}
+
+.resist {
+  font-size: 1rem;
+}
+
+.map .pink {
+  height: 40vh;
 }/*# sourceMappingURL=index.css.map */
