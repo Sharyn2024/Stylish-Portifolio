@@ -30,16 +30,19 @@ $color-pry: #1D809F;
 
 @mixin buttons{
     padding: 1em;
+    padding-left: 1.8em;
+    padding-right: 1.8em;
    background-color: $color-pry;
    color: white;
    border: none;
-   border-radius: 5px;
+   border-radius: 4px;
    margin: 35px;
    a{
     color: white;
    text-decoration: none;
    font-family: $font-st;
    font-weight: bold;
+   
    }
 
 }
@@ -54,7 +57,15 @@ body{
    background-size: cover;
    text-align: center;
    width: 100%;
-   height: 95vh;
+   height: 100vh;
+
+   .menu{
+    display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 20px;
+   
+   }
 
    .wall{
     padding: 10rem;
@@ -82,29 +93,27 @@ body{
  }
 }
 
-
-
-
 .banner{
     width: 100%;
-    height: 50vh;
+    height: 40vh;
    text-align: center;
 
    
 .ban{
-    padding: 15vh;
+    padding: 10vh;
    
 }
 .sytl{
     font-family: $font-st;
     font-size: 1.5rem;
     font-weight: bold;
+    padding-bottom: 10px;
     
 }
 .sub-bn{
     font-family: $font-st;
     font-size: 0.8rem;
-    font-weight: lighter;
+    font-weight:lighter ;
     
 }
 .button1{
@@ -114,13 +123,9 @@ body{
 }
 }
 
-
-
-
 .services{
 
     width: 100%;
-    height: 60vh;
     background-color: $color-pry;
     text-align: center;
     padding-top: 60px;
@@ -137,9 +142,16 @@ body{
     @include flex;
 color: white;
 
+
 }
 .wor{
-    padding: 15px;
+   
+    padding: 20px;
+    padding-bottom: 40px;
+    width: 200px;
+    height: 200px;
+    @include flex;
+    flex-direction: column;
 }
 
 .circle{
@@ -149,25 +161,24 @@ color: white;
    width: 6em;
    height: 6em;
    @include flex;
-   margin-left: 30PX;
+  margin: 10px;
+ 
 } 
 
 .let{
     font-family: $font-st;
  font-size: 0.6rem;
     font-weight:lighter;
+    padding: 5px;
 }
 img{
-    height: 60%;
-    width:60%;
+    height: 80%;
+    width:80%;
     object-fit: contain;
     
 }
   
 }
-
-
-
 
 .welc{
     background-image: url(img/portfolio-4.jpg);
@@ -188,14 +199,13 @@ img{
         .down{
             @include buttons;
             
-            
-            
         }
 }
 
 .recents{
     width: 100%;
-    height: 120vh; 
+    padding-bottom: 20px;
+    color: white;
    
     .its{
         text-align: center;
@@ -209,70 +219,66 @@ img{
        @include col;
        
     }
-    .container{
-        padding-top: 50px;
-        @include flex;
-        color: white;
-        
-     
-        .flex-item{
-         background-image: url(img/portfolio-1.jpg);
-         background-size: cover;
-         width: 30%;
-             height: 40vh;
-         
-        } 
-        
-        .flex-item2{
-            background-image: url(img/portfolio-2.jpg);
-            background-size: cover;
-            width: 30%;
-            height: 40vh;
-        }
-        
-     }
-     h4{
-        margin-left: 40px;
+    h4{
+        margin-left: 60px;
         padding-top: 140px;
+        padding-bottom: 10px;
         font-family: $font-st;
         font-size: smaller;
         font-weight: bolder;
         
      }
-     
-.wrd{
-    margin-left: 40px;
-    margin-right: 40px;
-    font-family: $font-st;
-    font-weight: lighter;
-    font-size: 0.9rem;
-     
- }
- .container2{
-    @include flex;
-    color: white;
-   
     
-    .flex-item3{
-        background-image: url(img/portfolio-3.jpg);
-        background-size: cover;
-        width: 30%;
-        height: 40vh;
+         
+    .wrd{
+        margin-left: 60px;
+        margin-right: 60px;
+        font-family: $font-st;
+        font-weight: lighter;
+        font-size: 0.9rem;
+         
+     }
+    
+    .proj{
+
+        @include flex;
+        
+        flex-wrap: wrap;
+        margin-top: 20px;
+        min-height: 450px;
+        margin-bottom: 40px;
+        
+
+        .flex-item{
+            background-image: url(img/portfolio-1.jpg);
+            background-size: cover;
+            width: 35%;
+                height: 300px;
+            
+           } 
+           
+           .flex-item2{
+               background-image: url(img/portfolio-2.jpg);
+               background-size: cover;
+               width: 35%;
+               height: 300px;
+           }
+             .flex-item3{
+           background-image: url(img/portfolio-3.jpg);
+           background-size: cover;
+           width: 35%;
+           height: 300px;
+       }
+       .flex-item4{
+           background-image: url(img/portfolio-4.jpg);
+           background-size: cover;
+           width: 35%;
+           height: 300px;
+       }
     }
-    .flex-item4{
-        background-image: url(img/portfolio-4.jpg);
-        background-size: cover;
-        width: 30%;
-        height: 40vh;
-    }
-}
-}
-
-
-
-
-
-
+ 
+   
+ }
 
 
 .below{
@@ -281,18 +287,20 @@ img{
     background-color: $color-pry;
     text-align: center;
 
-    .resist
-{
+    .resist{
     text-align: center;
     @include we;
     font-size: 2rem;
     padding-top: 60px;
-   
+   padding-bottom: 15px
 }
 
 .click{
     @include buttons;
     background-color: white;
+    margin: 5px;
+    padding-left: 2em;
+    padding-right: 2em;
     a{
         color: black;
     }
@@ -300,10 +308,14 @@ img{
 
 .look{
     @include buttons;
+    margin: 5px;
     background-color: black;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 }
-   .map{
+   
+.map{
     height: 60vh;
     width: 100%;
     .pink{
@@ -313,9 +325,8 @@ img{
     }
    }
    
-    
 .footer{
-   height: 10vh;
+   height: 20vh;
    text-align: center;
    padding: 20px;
    
@@ -332,134 +343,431 @@ img{
 }
 }
 
-@media (max-width: 768px) { 
 
 
+
+
+@media (max-width: 992px) { 
 
     .head{
-        // height: 60vh;
+        height: 80vh;
+     
+        .wall{
+            padding-top: 12rem;
+        }
+      .main-heading{
+         font-size: 5rem;
+     }
+     
+     
+     .sub-name{
+         font-size: 1.5rem;
+       }
+       .button{
+         font-size: 1em;
+        
+      }
+     }
+
+     .banner{
+        height: 35vh;
+    
+    .ban{
+        padding: 10vh;
+       
+    }
+    .sytl{
+        font-size: 1.7rem;
+        padding-bottom: 20px;
+        
+    }
+    
+    .sub-bn{
+        font-size: 1rem;
+        
+    }
+    .button1{
+       
+        font-size: 1em;
+    }
+    }
+
+    .services{
+
+        padding-top: 30px;
+    
+        .ser{
+           font-size: 0.9em
+        }
+       
+    .wor{
+        padding: 20px;
+        
+    }
+
+    
+    h3{
+        font-size: 1.5rem;
+    }
+
+    .let{
+     font-size: 1rem;
+
+    }
+      
+    }
+    .welc{
+        height: 50vh;
+    }
+
+    .below{
+        height: 20vh;
+        .click{
+            font-size: 1em;
+        }
+        .look{
+            font-size: 1em;
+        }
+    }
+
+   
+    .map{
+        height: 30vh;
+        .pink{
+            height: 30vh;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media (max-width: 768px) { 
+
+    .head{
+        height: 70vh;
+     
+        .wall{
+         padding-top: 10rem;
+         
+      }
+      .main-heading{
+             
+        font-size: 3.9em;
+   
+   }
+     .sub-name{
+        font-size: 1.4rem;
+        
+      }
+      .button{
+       
+            a{
+                font-size: rem;
+            }
+      }
+      
+     }
+     
+
+     .banner{
+        height: 25vh;
+
+        .ban{
+            padding: 5vh;
+        
+             }
+             .sytl{
+                
+                font-size: 1.4rem;
+        }
+        .sub-bn{
+          
+            font-size: 0.7rem;
+            
+        }
+        .button1{
+           
+            a{
+                font-size: 0.8rem;
+            }
+        }
+    
+        }
+        
+
+        .services{
+            padding-top: 30px;
+        
+            h2{
+                font-size: 2rem;
+            }
+            
+            .let{
+            
+            font-size: 0.7rem;
+            padding: 5px;
+            
+            } 
+            
+            .icon{
+            flex-wrap: wrap;
+            }
+
+            .wor{
+           margin: 20px;
+            
+            }
+            
+            .circle{
+            width: 5em;
+            height: 5em;
+           
+            }
+
+            img{
+                height: 90%;
+                width:90%;
+                object-fit: contain;
+                
+            }
+        }
+
+
+        .welc{
+            height: 80vh;
+            .well{
+                font-size: 2rem;
+            }
+            .down{
+                padding: 0.5em;
+            }
+        }
+
+
+.welc{
+    height: 50vh;
+    .down{
+        @include buttons;
+    }
+}
+
+
+        .recents{
+
+            .wrd{
+                margin-left: 30px;
+                margin-right: 30px;
+                font-size: 0.9rem;
+                 
+             }
+             
+             .its{
+                 font-size: 2rem;
+             }
+
+             .proj{
+                display: flex;  
+                flex-wrap: wrap;
+                
+             }
+             .flex-item{
+                width: 60%;
+             }
+             
+
+        }
+
+        
+
+        .below{
+            height: 230px;
+            .resist{
+                font-size: 1.5rem;
+            }
+         
+        }
+        
+        
+        .map{
+            height: 30vh;
+            .pink{
+                height: 30vh;
+            
+            }
+           }
+        
+           .footer{
+            height: 5px;
+            padding: 10px;
+         .cat{
+             width: 40px;
+         }
+         .copy{
+             padding: 10px;
+         }
+         }    
+              
+ }
+
+ @media (max-width: 576px) { 
+
+   
+    .head{
      
         .wall{
          padding: 5rem;
-          max-width: 100%;
-     
-          .main-heading{
-             
-              font-size: 3rem;
-         
-           
-         
-         }
          
       }
+      .main-heading{
+         font-size: 3rem;
      
      }
+     
      .sub-name{
-        font-family: $font-st;
-        font-weight: bold;
-        font-size: 1rem;
-        font-style: italic;
-       
+         
+         font-size: 1rem;
+         
+       }
+       .button{
+         padding: 0.8em;
+         a{
+            font-size: 0.8em;
+         }
         
       }
- }
+     }
 
-
-
- .banner{
-    
-    // height: 45vh;
-
-.ban{
-    padding: 5vh;
-
-    .sytl{
-        font-family: $font-st;
-        font-size: 1.5rem;
-        
+     .banner{
+        height: 35vh;
         .sub-bn{
-            font-family: $font-st;
-            font-size: 0.3rem;
+            font-size: 0.6rem;
             
         }
-    }
-}
+        .button1{
+          padding: 0.8em;
+            
+        }
 
 
-
-}
-
+     }
 .services{
-    padding-top: 30px;
-
-}
-h2{
-
-    font-size: 1rem;
-}
-
-.let{
-
-font-family: $font-st;
-font-size: 0.9rem;
-
-} 
-
-.icon{
-flex-wrap: wrap;
-}
-.wor{
-padding: 5px;
-}
-
-.circle{
-width: 2em;
-height: 10em;
-border: 1px solid #000;
-}
-
-.well{
-    font-size: 2rem;
-}
-
-.wrd{
-   margin-left: 30px;
-   margin-right: 30px;
-   font-family: $font-st;
-   font-size: 1rem;
-    
-}
-
-.its{
-    font-size: 2rem;
-}
-
-.resist{
-    font-size: 1rem;
-}
-.below{
-    // height: 30vh;
-  
-
-}
-
-
-.map{
-    // height: 40vh;
-    
-    .pink{
-        height: 40vh;
-    
+    .wor{
+        padding: 5px;
     }
-   }
+}
+
+     .welc{
+    
+        .well{
+           
+            padding-top: 100px;
+             font-size: 2rem;
+            }
+            
+            .down{
+                .button{
+                    margin: 20px;
+                    padding: 0.5em;
+                    a{
+                       font-size: 0.7rem;
+                    }
+                   
+                 }
+                
+                
+                
+            }
+    }
+
+    .recents{
+       
+       
+        .its{
+           font-size: 2rem;
+    
+        }
+        
+        h4{
+            margin-left: 40px;
+            padding-top: 140px;
+            font-family: $font-st;
+            font-size: smaller;
+            font-weight: bolder;
+            
+         }
+        
+             
+        .wrd{
+            margin-left: 40px;
+            margin-right: 40px;
+            font-family: $font-st;
+            font-weight: lighter;
+            font-size: 0.9rem;
+             
+         }
+        
+        .proj{
+    
+            .flex-item{
+                width: 80%;
+                    
+                
+               } 
+               
+               .flex-item2{
+                  
+                   width: 80%;
+                   
+               }
+                 .flex-item3{
+               width: 80%;
+              
+           }
+           .flex-item4{
+               width: 80%;
+              
+           }
+        }
+     
+       
+     }
 
 
 
+.below{
+    .resist{
+        font-size: 1rem;
+    }
+}
 
 
-
-
-
-
-
-
+ }

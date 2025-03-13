@@ -14,7 +14,13 @@ body {
   background-size: cover;
   text-align: center;
   width: 100%;
-  height: 95vh;
+  height: 100vh;
+}
+.head .menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 20px;
 }
 .head .wall {
   padding: 10rem;
@@ -32,10 +38,12 @@ body {
 }
 .head .button {
   padding: 1em;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
   background-color: #1D809F;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   margin: 35px;
 }
 .head .button a {
@@ -47,16 +55,17 @@ body {
 
 .banner {
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   text-align: center;
 }
 .banner .ban {
-  padding: 15vh;
+  padding: 10vh;
 }
 .banner .sytl {
   font-family: "Times New Roman", Times, serif;
   font-size: 1.5rem;
   font-weight: bold;
+  padding-bottom: 10px;
 }
 .banner .sub-bn {
   font-family: "Times New Roman", Times, serif;
@@ -65,10 +74,12 @@ body {
 }
 .banner .button1 {
   padding: 1em;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
   background-color: #1D809F;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   margin: 35px;
   background-color: black;
 }
@@ -81,7 +92,6 @@ body {
 
 .services {
   width: 100%;
-  height: 60vh;
   background-color: #1D809F;
   text-align: center;
   padding-top: 60px;
@@ -103,14 +113,23 @@ body {
   color: white;
 }
 .services .wor {
-  padding: 15px;
+  padding: 20px;
+  padding-bottom: 40px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .services .circle {
   padding: 1em;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
   background-color: #1D809F;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   margin: 35px;
   border-radius: 50%;
   background-color: white;
@@ -119,7 +138,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 30PX;
+  margin: 10px;
 }
 .services .circle a {
   color: white;
@@ -131,10 +150,11 @@ body {
   font-family: "Times New Roman", Times, serif;
   font-size: 0.6rem;
   font-weight: lighter;
+  padding: 5px;
 }
 .services img {
-  height: 60%;
-  width: 60%;
+  height: 80%;
+  width: 80%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -156,10 +176,12 @@ body {
 }
 .welc .down {
   padding: 1em;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
   background-color: #1D809F;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   margin: 35px;
 }
 .welc .down a {
@@ -171,7 +193,8 @@ body {
 
 .recents {
   width: 100%;
-  height: 120vh;
+  padding-bottom: 20px;
+  color: white;
 }
 .recents .its {
   text-align: center;
@@ -187,56 +210,53 @@ body {
   font-size: 0.6rem;
   font-weight: bolder;
 }
-.recents .container {
-  padding-top: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-.recents .container .flex-item {
-  background-image: url(img/portfolio-1.jpg);
-  background-size: cover;
-  width: 30%;
-  height: 40vh;
-}
-.recents .container .flex-item2 {
-  background-image: url(img/portfolio-2.jpg);
-  background-size: cover;
-  width: 30%;
-  height: 40vh;
-}
 .recents h4 {
-  margin-left: 40px;
+  margin-left: 60px;
   padding-top: 140px;
+  padding-bottom: 10px;
   font-family: "Times New Roman", Times, serif;
   font-size: smaller;
   font-weight: bolder;
 }
 .recents .wrd {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
   font-family: "Times New Roman", Times, serif;
   font-weight: lighter;
   font-size: 0.9rem;
 }
-.recents .container2 {
+.recents .proj {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  min-height: 450px;
+  margin-bottom: 40px;
 }
-.recents .container2 .flex-item3 {
+.recents .proj .flex-item {
+  background-image: url(img/portfolio-1.jpg);
+  background-size: cover;
+  width: 35%;
+  height: 300px;
+}
+.recents .proj .flex-item2 {
+  background-image: url(img/portfolio-2.jpg);
+  background-size: cover;
+  width: 35%;
+  height: 300px;
+}
+.recents .proj .flex-item3 {
   background-image: url(img/portfolio-3.jpg);
   background-size: cover;
-  width: 30%;
-  height: 40vh;
+  width: 35%;
+  height: 300px;
 }
-.recents .container2 .flex-item4 {
+.recents .proj .flex-item4 {
   background-image: url(img/portfolio-4.jpg);
   background-size: cover;
-  width: 30%;
-  height: 40vh;
+  width: 35%;
+  height: 300px;
 }
 
 .below {
@@ -252,15 +272,21 @@ body {
   font-weight: bold;
   font-size: 2rem;
   padding-top: 60px;
+  padding-bottom: 15px;
 }
 .below .click {
   padding: 1em;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
   background-color: #1D809F;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   margin: 35px;
   background-color: white;
+  margin: 5px;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 .below .click a {
   color: white;
@@ -273,12 +299,17 @@ body {
 }
 .below .look {
   padding: 1em;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
   background-color: #1D809F;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   margin: 35px;
+  margin: 5px;
   background-color: black;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 .below .look a {
   color: white;
@@ -299,7 +330,7 @@ body {
 }
 
 .footer {
-  height: 10vh;
+  height: 20vh;
   text-align: center;
   padding: 20px;
 }
@@ -316,79 +347,264 @@ body {
   padding: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  .head {
+    height: 80vh;
+  }
   .head .wall {
-    padding: 5rem;
-    max-width: 100%;
+    padding-top: 12rem;
   }
-  .head .wall .main-heading {
-    font-size: 3rem;
+  .head .main-heading {
+    font-size: 5rem;
   }
-  .sub-name {
+  .head .sub-name {
+    font-size: 1.5rem;
+  }
+  .head .button {
+    font-size: 1em;
+  }
+  .banner {
+    height: 35vh;
+  }
+  .banner .ban {
+    padding: 10vh;
+  }
+  .banner .sytl {
+    font-size: 1.7rem;
+    padding-bottom: 20px;
+  }
+  .banner .sub-bn {
+    font-size: 1rem;
+  }
+  .banner .button1 {
+    font-size: 1em;
+  }
+  .services {
+    padding-top: 30px;
+  }
+  .services .ser {
+    font-size: 0.9em;
+  }
+  .services .wor {
+    padding: 20px;
+  }
+  .services h3 {
+    font-size: 1.5rem;
+  }
+  .services .let {
+    font-size: 1rem;
+  }
+  .welc {
+    height: 50vh;
+  }
+  .below {
+    height: 20vh;
+  }
+  .below .click {
+    font-size: 1em;
+  }
+  .below .look {
+    font-size: 1em;
+  }
+  .map {
+    height: 30vh;
+  }
+  .map .pink {
+    height: 30vh;
+  }
+}
+@media (max-width: 768px) {
+  .head {
+    height: 70vh;
+  }
+  .head .wall {
+    padding-top: 10rem;
+  }
+  .head .main-heading {
+    font-size: 3.9em;
+  }
+  .head .sub-name {
+    font-size: 1.4rem;
+  }
+  .head .button a {
+    font-size: rem;
+  }
+  .banner {
+    height: 25vh;
+  }
+  .banner .ban {
+    padding: 5vh;
+  }
+  .banner .sytl {
+    font-size: 1.4rem;
+  }
+  .banner .sub-bn {
+    font-size: 0.7rem;
+  }
+  .banner .button1 a {
+    font-size: 0.8rem;
+  }
+  .services {
+    padding-top: 30px;
+  }
+  .services h2 {
+    font-size: 2rem;
+  }
+  .services .let {
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+  .services .icon {
+    flex-wrap: wrap;
+  }
+  .services .wor {
+    margin: 20px;
+  }
+  .services .circle {
+    width: 5em;
+    height: 5em;
+  }
+  .services img {
+    height: 90%;
+    width: 90%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .welc {
+    height: 80vh;
+  }
+  .welc .well {
+    font-size: 2rem;
+  }
+  .welc .down {
+    padding: 0.5em;
+  }
+  .welc {
+    height: 50vh;
+  }
+  .welc .down {
+    padding: 1em;
+    padding-left: 1.8em;
+    padding-right: 1.8em;
+    background-color: #1D809F;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 35px;
+  }
+  .welc .down a {
+    color: white;
+    text-decoration: none;
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
-    font-size: 1rem;
-    font-style: italic;
+  }
+  .recents .wrd {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 0.9rem;
+  }
+  .recents .its {
+    font-size: 2rem;
+  }
+  .recents .proj {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .recents .flex-item {
+    width: 60%;
+  }
+  .below {
+    height: 230px;
+  }
+  .below .resist {
+    font-size: 1.5rem;
+  }
+  .map {
+    height: 30vh;
+  }
+  .map .pink {
+    height: 30vh;
+  }
+  .footer {
+    height: 5px;
+    padding: 10px;
+  }
+  .footer .cat {
+    width: 40px;
+  }
+  .footer .copy {
+    padding: 10px;
   }
 }
-.banner .ban {
-  padding: 5vh;
-}
-.banner .ban .sytl {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 1.5rem;
-}
-.banner .ban .sytl .sub-bn {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 0.3rem;
-}
-
-.services {
-  padding-top: 30px;
-}
-
-h2 {
-  font-size: 1rem;
-}
-
-.let {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 0.9rem;
-}
-
-.icon {
-  flex-wrap: wrap;
-}
-
-.wor {
-  padding: 5px;
-}
-
-.circle {
-  width: 2em;
-  height: 10em;
-  border: 1px solid #000;
-}
-
-.well {
-  font-size: 2rem;
-}
-
-.wrd {
-  margin-left: 30px;
-  margin-right: 30px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 1rem;
-}
-
-.its {
-  font-size: 2rem;
-}
-
-.resist {
-  font-size: 1rem;
-}
-
-.map .pink {
-  height: 40vh;
+@media (max-width: 576px) {
+  .head .wall {
+    padding: 5rem;
+  }
+  .head .main-heading {
+    font-size: 3rem;
+  }
+  .head .sub-name {
+    font-size: 1rem;
+  }
+  .head .button {
+    padding: 0.8em;
+  }
+  .head .button a {
+    font-size: 0.8em;
+  }
+  .banner {
+    height: 35vh;
+  }
+  .banner .sub-bn {
+    font-size: 0.6rem;
+  }
+  .banner .button1 {
+    padding: 0.8em;
+  }
+  .services .wor {
+    padding: 5px;
+  }
+  .welc .well {
+    padding-top: 100px;
+    font-size: 2rem;
+  }
+  .welc .down .button {
+    margin: 20px;
+    padding: 0.5em;
+  }
+  .welc .down .button a {
+    font-size: 0.7rem;
+  }
+  .recents .its {
+    font-size: 2rem;
+  }
+  .recents h4 {
+    margin-left: 40px;
+    padding-top: 140px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: smaller;
+    font-weight: bolder;
+  }
+  .recents .wrd {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: lighter;
+    font-size: 0.9rem;
+  }
+  .recents .proj .flex-item {
+    width: 80%;
+  }
+  .recents .proj .flex-item2 {
+    width: 80%;
+  }
+  .recents .proj .flex-item3 {
+    width: 80%;
+  }
+  .recents .proj .flex-item4 {
+    width: 80%;
+  }
+  .below .resist {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=index.css.map */
