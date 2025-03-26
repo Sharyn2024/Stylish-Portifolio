@@ -59,13 +59,101 @@ body{
    width: 100%;
    height: 100vh;
 
-   .menu{
+
+
+
+   .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        padding: 20px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 15px 20px;
    
-   }
+    
+}
+
+#menu-toggle {
+    display: none;
+ 
+  
+}
+.nav-links {
+    display: none;
+    list-style: none;
+    padding-top: 10px; 
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 10px;
+}
+
+
+#menu-toggle:checked ~ .nav-links {
+    display: flex;
+    flex-direction: column;
+}
+
+
+label[for="menu-toggle"] {
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+
+    border-radius: 5px;
+    background-color: rgba(156, 156, 156, 0.651);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    .wall{
     padding: 10rem;
